@@ -1,4 +1,6 @@
 
+using ElectricShop.Models;
+
 namespace ElectricShop
 {
     public class Program
@@ -6,6 +8,11 @@ namespace ElectricShop
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+
+            //Regisztráljuk a keretrendszer számára a példányosítandó osztályt.
+            builder.Services.AddDbContext<ElectricDbContext>();
+
 
             // Add services to the container.
 
