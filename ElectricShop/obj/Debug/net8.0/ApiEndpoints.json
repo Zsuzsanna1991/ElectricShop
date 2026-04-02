@@ -1,23 +1,18 @@
 [
   {
-    "ContainingType": "ElectricShop.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
+    "ContainingType": "ElectricShop.Controllers.OperationSystemController",
+    "Method": "AddNewOSystem",
+    "RelativePath": "api/OperationSystem",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ElectricShop.WeatherForecast, ElectricShop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "addOsystemDto",
+        "Type": "ElectricShop.Models.Dtos.AddOsystemDto",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
   }
 ]
